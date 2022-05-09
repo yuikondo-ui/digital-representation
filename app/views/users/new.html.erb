@@ -1,0 +1,23 @@
+<div class="container m-3">
+    <%= form_for(@user) do |f| %>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+    <%= f.label :can %>
+    <%= f.number_field :can %>
+    <%= f.label :id_number %>
+    <%= f.number_field :id_number %>
+    <%= f.label :country_code %>
+    <%= f.text_field :country_code %>
+    <%= f.label :date_of_birth %>
+    <%= f.date_field :date_of_birth %>
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>
+    <%= f.label :place_of_birth %>
+    <%= f.text_field :place_of_birth %>
+    <%= f.label :idd %>
+    <%= f.number_field :idd %>
+    <%= f.submit %>
+    <% end %>
+</div>
