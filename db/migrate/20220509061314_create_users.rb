@@ -10,7 +10,6 @@ class CreateUsers < ActiveRecord::Migration[6.1]
       t.string :gender
       t.string :place_of_birth
       t.integer :idd
-
       t.timestamps
     end
   end

@@ -1,23 +1,30 @@
-<div class="container m-3">
-    <%= form_for(@user) do |f| %>
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name %>
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
-    <%= f.label :can %>
-    <%= f.number_field :can %>
-    <%= f.label :id_number %>
-    <%= f.number_field :id_number %>
-    <%= f.label :country_code %>
-    <%= f.text_field :country_code %>
-    <%= f.label :date_of_birth %>
-    <%= f.date_field :date_of_birth %>
-    <%= f.label :gender %>
-    <%= f.text_field :gender %>
-    <%= f.label :place_of_birth %>
-    <%= f.text_field :place_of_birth %>
-    <%= f.label :idd %>
-    <%= f.number_field :idd %>
-    <%= f.submit %>
-    <% end %>
+<div class="card pt-5">
+    <div class="row justify-content-center">
+    <div class="col-12 col-md-6 col-lg-4">
+        <h2 class="text-center mb-5">Create your account</h2>
+        <%= form_for(@user) do |f| %>
+        <%= f.label :first_name , class: "form-control-label" %>
+        <%= f.text_field :first_name, class: "form-control mb-3" %>
+        <%= f.label :last_name , class: "form-control-label" %>
+        <%= f.text_field :last_name , class: "form-control mb-3"%>
+        <%= f.label :can , class: "form-control-label" %>
+        <%= f.number_field :can, class: "form-control mb-3" %>
+        <%= f.label :id_number , class: "form-control-label" %>
+        <%= f.number_field :id_number , class: "form-control mb-3"%>
+        <%= f.label :country_code, class: "form-control-label" %>
+        <%= f.text_field :country_code , class: "form-control mb-3"%>
+        <%= f.label :date_of_birth, class: "form-control-label" %>
+        <%= f.date_field :date_of_birth , class: "form-control mb-3"%>
+        <%= f.label :gender, class: "form-control-label" %>
+        <%= f.text_field :gender , class: "form-control mb-3"%>
+        <%= f.label :place_of_birth , class: "form-control-label"%>
+        <%= f.text_field :place_of_birth , class: "form-control mb-3"%>
+        <%= f.label :idd , class: "form-control-label"%>
+        <%= f.text_field :idd , class: "form-control mb-3"%>
+        <%= f.label :image %>
+        <%= f.file_field :image %>
+        <%= f.submit class: "btn btn-primary btn-lg w-100"%>
+        <% end %>
+    </div>
+    </div>
 </div>

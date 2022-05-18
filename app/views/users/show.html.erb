@@ -1,10 +1,37 @@
-<h2><%= @user.first_name %></h2>
-<h2><%= @user.last_name %></h2>
-<h2><%= @user.can %></h2>
-<h2><%= @user.id_number %></h2>
-<h2><%= @user.country_code %></h2>
-<h2><%= @user.date_of_birth %></h2>
-<h2><%= @user.gender %></h2>
-<h2><%= @user.place_of_birth %></h2>
-<h2><%= @user.date_of_birth %></h2>
-<h2><%= @user.idd %></h2>
+<div class="container m-3 p-2 bg-dark text-white">
+    <div class="d-flex flex-row align-items-center align-items-center">
+        <div class="item p-2">COUNTRY CODE</div>
+        <div class="input p-2"><%= @user.country_code %></div>
+    </div>
+    <div class="d-flex flex-row align-items-center">
+        <div class="item p-2">ID NUMBER</div>
+        <div class="input p-2"><%= @user.id_number %></div>
+    </div>
+    <div class="d-flex flex-row align-items-center">
+        <div class="item p-2">IDD</div>
+        <div class="input p-2"><%= @user.idd %></div>
+    </div>
+    <div class="d-flex flex-row align-items-center">
+        <div class="item p-2">CAN</div>
+        <div class="input p-2"><%= @user.can %></div>
+    </div>
+    <div class="d-flex flex-row align-items-center">
+        <div class="item p-2">FULL NAME</div>
+        <div class="input p-2"><%= @user.first_name + @user.last_name %></div>
+    </div>
+    <div class="d-flex flex-row align-items-center">
+        <div class="item p-2">DATE OF BIRTH</div>
+        <div class="input p-2"><%= @user.date_of_birth %></div>
+    </div>
+    <div class="d-flex flex-row align-items-center">
+        <div class="item p-2">GENDER</div>
+        <div class="input p-2"><%= @user.gender %></div>
+    </div>
+     <div class="d-flex flex-row align-items-center">
+        <div class="item p-2">PLACE OF BIRTH</div>
+        <div class="input p-2"><%= @user.place_of_birth %></div>
+    </div>
+
+    <%= image_tag @user.image.url %></td>
+
+</div>
